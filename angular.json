@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "https://guilherme-de-oliveira.github.io/guilherme-de-oliveira.github.io/",
             "outputPath": "dist/guilherme-de-oliveira.github.io",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -97,6 +98,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
