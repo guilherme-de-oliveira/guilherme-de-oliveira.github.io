@@ -15,6 +15,7 @@
       "prefix": "app",
       "architect": {
         "build": {
+          "baseHref": "https://guilherme-de-oliveira.github.io/guilherme-de-oliveira.github.io/",
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/guilherme-de-oliveira.github.io",
@@ -30,7 +31,19 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              {
+                "input": "src/theme-md-dark-indigo.scss",
+                "bundleName": "md-dark-indigo",
+                "inject": false
+              },
+              {
+                "input": "src/theme-md-light-indigo.scss",
+                "bundleName": "md-light-indigo",
+                "inject": false
+              },
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeflex/primeflex.css"
             ],
             "scripts": []
           },

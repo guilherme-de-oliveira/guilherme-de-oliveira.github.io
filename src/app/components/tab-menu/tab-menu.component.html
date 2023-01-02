@@ -1,0 +1,21 @@
+<p-menubar [model]="items">
+    <ng-template pTemplate="item" let-item let-i="index">
+        <a routerLink="heroes">
+            {{item.label}}
+        </a>
+    </ng-template>
+
+    <!-- <select (change)="onChange()" [(ngModel)]="activeLocale">
+        <option *ngFor="let locale of locales" [value]="locale.code">
+            {{ locale.name }}
+        </option> 
+    </select> -->
+    <ng-template pTemplate="end">
+        <div style="display: flex;">
+            <p-dropdown [options]="locales" [(ngModel)]="activeLocale" optionLabel="name"
+                [style]="{'width': '200px', 'margin-right':'2rem'}"></p-dropdown>
+            <p-selectButton [options]="stateOptions" [(ngModel)]="value" optionLabel="label" optionValue="value"
+                (onChange)="changeTheme($event.value)"></p-selectButton>
+        </div>
+    </ng-template>
+</p-menubar>
