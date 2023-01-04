@@ -11,5 +11,5 @@ export class ExperienceComponent {
   ibmDevSkills = ['TypeScript', 'Angular', 'Vue.js'];
   eisDevSkills = ['React'];
   
-  workData = works.data
+  workData = works.data;
 }

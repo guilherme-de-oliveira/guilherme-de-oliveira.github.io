@@ -1,7 +1,7 @@
 <div class="cardItem">
     <h2>{{title}}</h2>
     <p>
-        <span *ngFor="let skill of skills"><p-tag class="skill">#{{skill}}</p-tag></span>
+        <p-tag [style]="{'margin-top': '0.5em'}" *ngFor="let skill of skills" class="skill">#{{skill}}</p-tag>
     </p>
     <i>
         {{workDescription}}
