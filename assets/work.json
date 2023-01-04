@@ -1,0 +1,64 @@
+{
+    "data": [
+        {
+            "title": "Front-end Developer - EIS",
+            "skills": [
+                "TypeScript",
+                "React",
+                "RxJS",
+                "Docker",
+                "Jest"
+            ],
+            "workDescription": "Build new reusable compents using React and Ant Design for React, testing using Jest.",
+            "workItems": [
+                "Developed modern web applications using React and TypeScript, resulting in enhanced user experience;",
+                "Built new components and integrated them with API services to improve software functionality;",
+                "Utilized project management tools such as Jira, Slack and Mural to optimize team performance and reach objectives;"
+            ]
+        },
+        {
+            "title": "Software Developer - IBM",
+            "skills": [
+                "TypeScript",
+                "Angular",
+                "Node.js",
+                "Shell",
+                "Linux",
+                "C",
+                "CouchDB",
+                "DB2 SQL",
+                "Docker",
+                "RxJS",
+                "Travis CI",
+                "Jenkins"
+            ],
+            "workDescription": "Developer with the aim of helping and building high value solutions using the most recent tecnology and tools. Worked on Billing, ETL, Data-Warehouse and Client Support Systems.",
+            "workItems": [
+                "Developed WEB applications with Back/Front end functionality, utilizing Node.JS microservices and participating on decisions from the architecture of the system, coding and testing;",
+                "Created and maintained Unix Shell scripts for Data Warehouse batch applications;",
+                "Developed a full-featured monitoring WEB application to generate insights and metrics, resulting in 20% cost-savings;",
+                "Collaborated with a multi-disciplinary team to convert business needs into technical specifications."
+            ]
+        },
+        {
+            "title": "Application Developer Intern- IBM",
+            "skills": [
+                "JavaScript",
+                "JQuery",
+                "PHP",
+                "DB2 SQL",
+                "Vue.js",
+                "Git",
+                "JSON",
+                "HTML",
+                "CSS"
+            ],
+            "workDescription": "Work on finding and developing new improvements and automation for Asset Management.",
+            "workItems": [
+                "Developed automation feature to generate QR Code tags, increasing employee productivity by 15% daily;",
+                "Engineered multiple web applications using JavaScript (JQuery), PHP and DB2;",
+                "Collaborated with stakeholders to identify opportunities for process automation, providing analysis and process documentation."
+            ]
+        }
+    ]
+}
