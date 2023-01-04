@@ -6,18 +6,20 @@ import { FormsModule } from '@angular/forms';
 // import {TabMenuModule} from 'primeng/tabmenu';
 import { TabMenuComponent } from './components/tab-menu/tab-menu.component';
 import { RouterModule } from '@angular/router';
-import {DropdownModule} from 'primeng/dropdown';
+import { DropdownModule } from 'primeng/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MenubarModule} from 'primeng/menubar';
+import { MenubarModule } from 'primeng/menubar';
 import { DescriptionComponent } from './components/description/description.component';
 import { FooterComponent } from './components/footer/footer.component';
-import {DividerModule} from 'primeng/divider';
-import {SelectButtonModule} from 'primeng/selectbutton';
+import { DividerModule } from 'primeng/divider';
+import { SelectButtonModule } from 'primeng/selectbutton';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { AppRoutingModule } from './app-routing.module';
-import {CardModule} from 'primeng/card';
+import { CardModule } from 'primeng/card';
 import { ExperimentComponent } from './components/experiment/experiment.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { TagModule } from 'primeng/tag';
+import { CardComponent } from './components/experience/card/card.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     FooterComponent,
     ExperienceComponent,
     ExperimentComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CardComponent
   ],
   imports: [
     RouterModule.forRoot([]),
@@ -39,7 +42,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     DividerModule,
     SelectButtonModule,
     AppRoutingModule,
-    CardModule
+    CardModule,
+    TagModule
   ],
   providers: [],
   bootstrap: [AppComponent]

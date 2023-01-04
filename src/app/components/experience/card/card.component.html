@@ -1,0 +1,14 @@
+<div class="cardItem">
+    <h2>{{title}}</h2>
+    <p>
+        <span *ngFor="let skill of skills"><p-tag class="skill">#{{skill}}</p-tag></span>
+    </p>
+    <i>
+        {{workDescription}}
+    </i>
+    <ul *ngFor="let item of workItems">
+        <li>
+            {{item}}
+        </li>
+    </ul>
+</div>

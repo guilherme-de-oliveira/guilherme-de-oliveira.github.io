@@ -1,2 +1,11 @@
-<h3>Thing's I've made or learned at the companies I have worked for.</h3>
-<p>Coming soon :)</p>
+<p>Thing's I've made or learned at the companies I have worked for.</p>
+
+<div *ngFor="let item of workData">
+    <app-card 
+        [title]="item.title"
+        [skills]="item.skills"
+        [workDescription]="item.workDescription"
+        [workItems]="item.workItems"
+    >
+    </app-card>
+</div>
