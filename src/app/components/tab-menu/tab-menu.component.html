@@ -7,11 +7,16 @@
         </option> 
     </select> -->
     <ng-template pTemplate="end">
-        <div style="display: flex;">
-            <p-dropdown [options]="locales" [disabled]="true" [(ngModel)]="activeLocale" optionLabel="name"
-                [style]="{'width': '200px', 'margin-right':'2rem'}"></p-dropdown>
-            <p-selectButton [options]="stateOptions" [(ngModel)]="value" optionLabel="label" optionValue="value"
-                (onChange)="changeTheme($event.value)"></p-selectButton>
+        <div class="grid">
+            <div class="hidden md:inline-flex p-3 sm:flex-1 h-2rem sm:col-12 md:col-6 ">
+                <p-dropdown [options]="locales" [disabled]="true" [(ngModel)]="activeLocale" optionLabel="name"
+                    [style]="{'width': '200px', 'margin-right':'2rem'}"></p-dropdown>
+            </div>
+            <div class="hidden md:inline-flex p-3 sm:flex-1 sm:col-12 md:col-6 ">
+                <p-selectButton [options]="stateOptions" [(ngModel)]="value" optionLabel="label" optionValue="value"
+                    (onChange)="changeTheme($event.value)"></p-selectButton>
+            </div>
         </div>
     </ng-template>
 </p-menubar>
+
