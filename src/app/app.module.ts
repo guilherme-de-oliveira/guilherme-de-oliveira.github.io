@@ -20,6 +20,11 @@ import { ExperimentComponent } from './components/experiment/experiment.componen
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { TagModule } from 'primeng/tag';
 import { CardComponent } from './components/experience/card/card.component';
+import { LoginComponent } from './components/login/login.component';
+import { InputTextModule } from 'primeng/inputtext';
+import { ButtonModule } from 'primeng/button';
+import { SplitButtonModule } from 'primeng/splitbutton';
+import { PasswordModule } from 'primeng/password';
 
 @NgModule({
   declarations: [
@@ -30,7 +35,8 @@ import { CardComponent } from './components/experience/card/card.component';
     ExperienceComponent,
     ExperimentComponent,
     PageNotFoundComponent,
-    CardComponent
+    CardComponent,
+    LoginComponent
   ],
   imports: [
     RouterModule.forRoot([]),
@@ -43,7 +49,11 @@ import { CardComponent } from './components/experience/card/card.component';
     SelectButtonModule,
     AppRoutingModule,
     CardModule,
-    TagModule
+    TagModule,
+    InputTextModule,
+    ButtonModule,
+    SplitButtonModule,
+    PasswordModule
   ],
   providers: [],
   bootstrap: [AppComponent]

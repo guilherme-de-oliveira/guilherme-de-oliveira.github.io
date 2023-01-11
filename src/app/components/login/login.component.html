@@ -1,0 +1,45 @@
+
+    <div class="grid">
+        <div class="hidden md:inline-flex col-4"></div>
+        <div class="col-6 ">
+            <!-- <p-card> -->
+            <div class="" *ngIf="formType == 'login'; else elseBlock">
+                <h3>Log in</h3>
+            </div>
+            <ng-template #elseBlock>
+                <h3>Sign Up</h3>
+            </ng-template>
+            <div class="field">
+                <label for="username" class="block">Username</label>
+                <input id="username" type="username" aria-describedby="username1-help" pInputText />
+                <!-- <small id="username1-help" class="block">Enter your username to reset your password.</small> -->
+            </div>
+            <div class="field">
+                <label for="password" class="block">Password</label>
+                <p-password id="password" [feedback]="formType == 'signup'" [toggleMask]="true"></p-password>
+            </div>
+            <!-- <div class="field" *ngIf="formType == 'signup'">
+            <label for="confirmPassword" class="block">Confirm Password</label>
+            <p-password id="confirmPassword" [feedback]="true" [toggleMask]="true"></p-password>
+            </div> -->
+            <div class="" *ngIf="formType == 'login'; else elseBlock2">
+                <p-button label="Log in" (onClick)="login()"></p-button>
+            </div>
+            <ng-template #elseBlock2>
+                <p-button label="Sign Up" (onClick)="login()"></p-button>
+            </ng-template>
+            <div *ngIf="formType == 'login'; else elseBlock3">
+                <button pButton pRipple type="button" label="No account? Create one" class="p-button-text"
+                    (click)="formType = 'signup'"></button>
+            </div>
+            <ng-template #elseBlock3>
+                <div>
+                    <button pButton pRipple type="button" label="Already have an account? Log in" class="p-button-text"
+                        (click)="formType = 'login'"></button>
+                </div>
+            </ng-template>
+        <!-- </p-card> -->
+        </div>
+        <div *ngIf="formType == 'signup'"> epa
+        </div>
+    </div>

@@ -1,22 +1,18 @@
 <p-menubar [model]="items">
     <ng-template pTemplate="item" let-item let-i="index"></ng-template>
-
-    <!-- <select (change)="onChange()" [(ngModel)]="activeLocale">
-        <option *ngFor="let locale of locales" [value]="locale.code">
-            {{ locale.name }}
-        </option> 
-    </select> -->
     <ng-template pTemplate="end">
         <div class="grid">
-            <div class="hidden md:inline-flex p-3 sm:flex-1 h-2rem sm:col-12 md:col-6 ">
-                <p-dropdown [options]="locales" [disabled]="true" [(ngModel)]="activeLocale" optionLabel="name"
-                    [style]="{'width': '200px', 'margin-right':'2rem'}"></p-dropdown>
+            <div class="hidden md:inline-flex sm:flex-1 h-2rem sm:col-10 md:col-10 lg:col-9 ">
+                <p-splitButton 
+                    label="Config" 
+                    [model]="this.config" 
+                    styleClass="p-button-text mr-2 mb-2" 
+                    optionDisabled="disabled">
+                </p-splitButton>
             </div>
-            <div class="hidden md:inline-flex p-3 sm:flex-1 sm:col-12 md:col-6 ">
-                <p-selectButton [options]="stateOptions" [(ngModel)]="value" optionLabel="label" optionValue="value"
-                    (onChange)="changeTheme($event.value)"></p-selectButton>
+            <div class="md:inline-flex sm:flex-1 sm:col-2 md:col-2 lg:col-3 ">
+                <button pButton pRipple type="button" label="Login" class="p-button-text" routerLink="login"></button>
             </div>
         </div>
     </ng-template>
 </p-menubar>
-

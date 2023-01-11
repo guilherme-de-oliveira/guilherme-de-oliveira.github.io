@@ -33,4 +33,10 @@
     .p-dropdown-panel .p-dropdown-items .p-dropdown-item:not(.p-highlight):not(.p-disabled):hover {
         color: v.$subject-font-color;
     }
+    .p-splitbutton.p-button-text .p-button  {
+        color: v.$subject-font-color;
+    }
+    .p-splitbutton.p-button-text .p-button:hover  {
+        color: v.$subject-font-color;
+    }
 }
