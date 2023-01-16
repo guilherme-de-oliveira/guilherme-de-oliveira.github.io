@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
-// import {TabMenuModule} from 'primeng/tabmenu';
 import { TabMenuComponent } from './components/tab-menu/tab-menu.component';
 import { RouterModule } from '@angular/router';
 import { DropdownModule } from 'primeng/dropdown';
@@ -25,7 +25,10 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { SplitButtonModule } from 'primeng/splitbutton';
 import { PasswordModule } from 'primeng/password';
+import { ProfileComponent } from './components/profile/profile.component';
 
+import { authInterceptorProviders } from './helpers/auth.interceptor';
+import { BoardAdminComponent } from './components/board-admin/board-admin.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +39,9 @@ import { PasswordModule } from 'primeng/password';
     ExperimentComponent,
     PageNotFoundComponent,
     CardComponent,
-    LoginComponent
+    LoginComponent,
+    ProfileComponent,
+    BoardAdminComponent
   ],
   imports: [
     RouterModule.forRoot([]),
@@ -53,9 +58,11 @@ import { PasswordModule } from 'primeng/password';
     InputTextModule,
     ButtonModule,
     SplitButtonModule,
-    PasswordModule
+    PasswordModule,
+    HttpClientModule,
+    ReactiveFormsModule 
   ],
-  providers: [],
+  providers: [authInterceptorProviders ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

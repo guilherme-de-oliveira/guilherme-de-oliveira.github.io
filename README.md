@@ -1,4 +1,14 @@
-# GuilhermeDeOliveiraGithubIo
+## Welcome
+Hello, I'm glad you're here!
+
+This application has the goal to show a little bit about my self, the things I've worked on and the code itself. Feel free to see it :).
+
+## You access the application
+
+https://guilherme-de-oliveira.github.io/
+
+
+## GuilhermeDeOliveiraGithubIo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 

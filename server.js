@@ -34,8 +34,6 @@ app.listen(PORT, () => {
 });
 
 db.mongoose.set("strictQuery", true);
-// mongodb+srv://goliva:<password>@cluster0.whmgnzj.mongodb.net/?retryWrites=true&w=majority
-console.log(dbConfig)
 db.mongoose
   .connect(`mongodb+srv://${dbConfig.USER}:${dbConfig.PWD}@${dbConfig.HOST}`, {
     useNewUrlParser: true,
