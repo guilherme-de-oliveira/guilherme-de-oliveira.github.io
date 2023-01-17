@@ -1,16 +1,20 @@
 ## Welcome
+
 Hello, I'm glad you're here!
 
-This application has the goal to show a little bit about my self, the things I've worked on and the code itself. Feel free to see it :).
+This application has the goal to show a little bit about myself, the things I've worked on and the code itself. Feel free to see it :)
 
-## You access the application
+## Application Access
 
 https://guilherme-de-oliveira.github.io/
 
+## Resources
 
-## GuilhermeDeOliveiraGithubIo
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+This project was generated with:
+Angular CLI: 15.0.4
+Node: 14.21.2
+Package Manager: npm 6.14.17
+typescript: 4.8.4
 
 ## Development server
 
