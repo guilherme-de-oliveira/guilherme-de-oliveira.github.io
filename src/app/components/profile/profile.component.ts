@@ -18,11 +18,10 @@ export class ProfileComponent implements OnInit {
   
   ngOnInit(): void {
     this.currentUser = this.token.getUser();
-    console.log(this.currentUser)
+
     this.userService.getPublicContent().subscribe({
       next: data => {
         this.content = data;
-        console.log(this.content)
       },
       error: err => {
         this.content = JSON.parse(err.error).message;
@@ -33,5 +32,9 @@ export class ProfileComponent implements OnInit {
   logout(): void {
     this.tokenStorageService.signOut();
     window.location.reload();
+  }
+
+  isEmptyObject(obj: any) {
+    return JSON.stringify(obj) === '{}'
   }
 }

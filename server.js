@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-
+const path = require('path')
 const app = express();
 
 const db = require("./app/models");
@@ -18,11 +18,6 @@ app.use(express.json());
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
 
-// simple route
-app.get("/", (req, res) => {
-  res.json({ message: "Welcome to application." });
-});
-
 // routes
 require('./app/routes/auth.routes')(app);
 require('./app/routes/user.routes')(app);
@@ -31,6 +26,25 @@ require('./app/routes/user.routes')(app);
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
+});
+const allowedExt = [
+  '.js',
+  '.ico',
+  '.css',
+  '.png',
+  '.jpg',
+  '.woff2',
+  '.woff',
+  '.ttf',
+  '.svg',
+];
+
+app.use('/', (req, res) =>  {
+  if (allowedExt.filter(ext => req.url.indexOf(ext) > 0).length > 0) {
+    res.sendFile(path.resolve(`dist/guilherme-de-oliveira.github.io/${req.url}`));
+  } else {
+    res.sendFile(path.resolve('dist/guilherme-de-oliveira.github.io/index.html'));
+  }
 });
 
 db.mongoose.set("strictQuery", true);

@@ -5,11 +5,12 @@ const User = db.user;
 const Role = db.role;
 
 verifyToken = (req, res, next) => {
-  let token = req.headers["x-access-token"].replace('Bearer ', '');
+  let token = req.headers["x-access-token"];
 
   if (!token) {
     return res.status(403).send({ message: "No token provided!" });
   }
+  token = token.replace('Bearer ', '');
   
   jwt.verify(token, config.secret, (err, decoded) => {  
     if (err) {

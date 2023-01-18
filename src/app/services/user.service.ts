@@ -1,8 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from '../../environments/environment';
 
-const API_URL = 'http://localhost:3000/api/portfolio_db/';
+const title = environment.title;
+console.log('Environment: ' + title);
+
+const API_URL = `${environment.production}/api/portfolio_db/`;
 
 @Injectable({
   providedIn: 'root'
