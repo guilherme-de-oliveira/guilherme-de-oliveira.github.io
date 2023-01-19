@@ -24,7 +24,8 @@ export class ProfileComponent implements OnInit {
         this.content = data;
       },
       error: err => {
-        this.content = JSON.parse(err.error).message;
+        console.log(err)
+        this.content = err.error;
       }
     });
   }

@@ -7,7 +7,7 @@ const API_URL = environment.apiURL;
 const title = environment.title;
 console.log('Environment: ' + title);
 
-const AUTH_API = `${environment.apiURL}/api/auth/`;
+const AUTH_API = `${API_URL}/api/auth/`;
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })

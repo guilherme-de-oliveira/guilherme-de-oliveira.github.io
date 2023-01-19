@@ -6,7 +6,7 @@ import { environment } from '../../environments/environment';
 const title = environment.title;
 console.log('Environment: ' + title);
 
-const API_URL = `${environment.production}/api/portfolio_db/`;
+const API_URL = `${environment.apiURL}/api/portfolio_db/`;
 
 @Injectable({
   providedIn: 'root'

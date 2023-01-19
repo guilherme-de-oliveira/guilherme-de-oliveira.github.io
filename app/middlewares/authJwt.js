@@ -11,9 +11,14 @@ verifyToken = (req, res, next) => {
     return res.status(403).send({ message: "No token provided!" });
   }
   token = token.replace('Bearer ', '');
-  
+
   jwt.verify(token, config.secret, (err, decoded) => {  
     if (err) {
+      console.error(err)
+      if (err.TokenExpiredError) {
+        return res.status(440).send({ message: "Session experied! Please log in again." });
+      }
+
       return res.status(401).send({ message: "Unauthorized!" });
     }
     req.userId = decoded.id;
