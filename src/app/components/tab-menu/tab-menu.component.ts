@@ -1,5 +1,5 @@
 import { Inject, Component, LOCALE_ID } from '@angular/core';
-import { MenuItem, SelectItemGroup } from 'primeng/api';
+import { MenuItem } from 'primeng/api';
 import { ThemeService } from 'src/app/theme.service';
 
 @Component({
@@ -19,8 +19,6 @@ export class TabMenuComponent {
     { label: `${this.work}`, icon: 'pi pi-fw pi-file', routerLink: '/work' },
     { label: `${this.experiment}`, icon: 'pi pi-fw pi-pencil', routerLink: '/experiment' },
   ];
-
-  value: string = "md-dark-indigo";
 
   config: MenuItem[] = [
     {
