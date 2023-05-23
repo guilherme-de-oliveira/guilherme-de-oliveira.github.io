@@ -1,11 +1,16 @@
 
-<app-tab-menu></app-tab-menu>
+<app-tab-menu (outputFromChild)="scrollToItem($event)"></app-tab-menu>
 <div class="main">
     <div class="content">
-        <router-outlet></router-outlet>
+        <!-- <router-outlet></router-outlet> -->
+        <app-description id="description"></app-description>
+        <p-divider type="dashed"></p-divider>
+        <app-experience id="experience"></app-experience>
+        <p-divider type="dashed"></p-divider>
+        <app-experiment id="experiment"></app-experiment>
     </div>
     <div  class="footer">
         <p-divider type="dashed"></p-divider>
-        <app-footer></app-footer>
+        <app-footer id="contact"></app-footer>
     </div>
 </div>
