@@ -3,11 +3,11 @@
         {
             "title": "Front-end Developer - EIS",
             "skills": [
-                "TypeScript",
-                "React",
-                "RxJS",
-                "Docker",
-                "Jest"
+                {"name": "TypeScript", "icon": "typescript"},
+                {"name": "React", "icon": "react"},
+                {"name": "RxJS", "icon": "rxjs"},
+                {"name": "Docker", "icon": "docker"},
+                {"name": "Jest", "icon": "jest"}
             ],
             "workDescription": "Build new reusable compents using React and Ant Design for React, testing using Jest.",
             "workItems": [
@@ -19,18 +19,20 @@
         {
             "title": "Software Developer - IBM",
             "skills": [
-                "TypeScript",
-                "Angular",
-                "Node.js",
-                "Shell",
-                "Linux",
-                "C",
-                "CouchDB",
-                "DB2 SQL",
-                "Docker",
-                "RxJS",
-                "Travis CI",
-                "Jenkins"
+                {"name": "Angular", "icon": "angular"},
+                {"name": "JavaScript", "icon": "javascript"},
+                {"name": "TypeScript", "icon": "typescript"},
+                {"name": "Node.js", "icon": "nodejs"},
+                {"name": "Shell", "icon": "bash"},
+                {"name": "Linux", "icon": "linux"},
+                {"name": "C", "icon": "c"},
+                {"name": "CouchDB", "icon": "couchdb"},
+                {"name": "SQL", "icon": "sql"},
+                {"name": "Docker", "icon": "docker"},
+                {"name": "RxJS", "icon": "rxjs"},
+                {"name": "NgRX", "icon": "ngrx"},
+                {"name": "Travis CI", "icon": "travis-ci"},
+                {"name": "Jenkins", "icon": "jenkins"}
             ],
             "workDescription": "Developer with the aim of helping and building high value solutions using the most recent tecnology and tools. Worked on Billing, ETL, Data-Warehouse and Client Support Systems.",
             "workItems": [
@@ -43,15 +45,15 @@
         {
             "title": "Application Developer Intern- IBM",
             "skills": [
-                "JavaScript",
-                "JQuery",
-                "PHP",
-                "DB2 SQL",
-                "Vue.js",
-                "Git",
-                "JSON",
-                "HTML",
-                "CSS"
+                {"name": "JavaScript", "icon": "javascript"},
+                {"name": "JQuery", "icon": "jquery"},
+                {"name": "PHP", "icon": "php"},
+                {"name": "SQL", "icon": "sql"},
+                {"name": "Vue.js", "icon": "vue"},
+                {"name": "Git", "icon": "git"},
+                {"name": "JSON", "icon": "json"},
+                {"name": "HTML", "icon": "html"},
+                {"name": "CSS", "icon": "css"}
             ],
             "workDescription": "Work on finding and developing new improvements and automation for Asset Management.",
             "workItems": [
