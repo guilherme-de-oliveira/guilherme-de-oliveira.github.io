@@ -3,7 +3,7 @@
         {
             "title": "Shop System",
             "skills": [
-                {"name": "Angular", "icon": "fa-brands fa-angular"},
+                "Angular",
                 "TypeScript",
                 "RxJS",
                 "NgRx",
@@ -31,7 +31,7 @@
         {
             "title": "Api Call Debouce",
             "skills": [
-                {"name": "Angular", "icon": "fa-brands fa-angular"},
+                "Angular",
                 "RxJS",
                 "TypeScript",
                 "HTML"
@@ -43,7 +43,7 @@
         {
             "title": "Lazy Load Angular",
             "skills": [
-                {"name": "Angular", "icon": "fa-brands fa-angular"},
+                "Angular",
                 "TypeScript",
                 "HTML",
                 "CSS"
