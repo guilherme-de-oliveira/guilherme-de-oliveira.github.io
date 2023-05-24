@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SkillsDescription } from 'src/app/interfaces/menu-titles';
 
 @Component({
   selector: 'app-description',
@@ -6,11 +7,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./description.component.scss']
 })
 
-// export interface Item {
-//   name: string;
-// }
 export class DescriptionComponent {
-  frontEnd: Array<String> = ['JavaScript', 'TypeScript', 'Angular', 'Vue.js', 'Rxjs', 'JQuery'];
-  backEnd: Array<String> = ['Node.js', 'PHP (CodeIgneter)', 'DB2', 'Cloudant/CouchDB', 'SQL'];
-  system: Array<String> = ['Linux', 'Shell Script', 'Docker', 'TravisCI', 'Cloud'];
+  frontEnd: Array<SkillsDescription> = [
+    {name: "JavaScript", icon: "javascript"},
+    {name: "TypeScript", icon: "typescript"},
+    {name: "Angular", icon: "angular"},
+    {name: "Vue.js", icon: "vue"},
+    {name: "RxJS", icon: "rxjs"},
+    {name: "JQuery", icon: "jquery"},
+  ];
+  backEnd: Array<SkillsDescription> = [
+    {name: "Node.js", icon: "nodejs"},
+    {name: "PHP (CodeIgneter)", icon: "php"},
+    {name: "SQL", icon: "sql"}, 
+    {name: "CouchDB/Cloudant", icon: "couchdb"},
+    {name: "Shell", icon: "bash"},
+  ];
+  system: Array<SkillsDescription> = [
+    {name: "Linux", icon: "linux"},
+    {name: "Docker", icon: "docker"}, 
+    {name: "Travis CI", icon: "travis-ci"},
+    {name: "Jenkins", icon: "jenkins"},
+    {name: "Cloud", icon: "cloud"},
+  ];
 }

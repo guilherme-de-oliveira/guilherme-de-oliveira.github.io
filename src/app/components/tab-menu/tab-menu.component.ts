@@ -1,6 +1,6 @@
 import { Inject, Component, LOCALE_ID, Output, EventEmitter } from '@angular/core';
 import { MenuItem } from 'primeng/api';
-import { ThemeService } from 'src/app/theme.service';
+import contacts from '../../../assets/contacts.json';
 
 @Component({
   selector: 'app-tab-menu',
@@ -10,10 +10,11 @@ import { ThemeService } from 'src/app/theme.service';
 
 export class TabMenuComponent {
   @Output() outputFromChild : EventEmitter<string> = new EventEmitter();
+  contactItems = contacts.data;
   // Menu Items
   about: string = `About`;
   work: string = `Work`;
-  experiment: string = `Experiment`;
+  experiment: string = `Projects`;
   configPlaceHolder: string = `Config`;
   contact: string = `Contact`;
   items: MenuItem[] = [
@@ -23,47 +24,21 @@ export class TabMenuComponent {
     { label: `${this.contact}`, icon: 'pi pi-fw pi-users', command: () => { this.sendScrollTo("contact")} },
   ];
 
-  config: MenuItem[] = [
-    {
-      label: 'Locales',
-      items: [
-        { 
-          label: 'English', disabled: true,
-          command: () => { this.changeLocale('en-US') }
-        },
-        { 
-          label: 'Português(Brasil)', disabled: true, 
-          command: () => { this.changeLocale('pt-BR') }
-        },
-      ]
-    },
-    {
-      label: 'Theme',
-      items: [
-        { label: 'Dark', command: () => {
-          this.changeTheme('md-dark-indigo') }},
-        { label: 'Light', command: () => {
-          this.changeTheme('md-light-indigo') }}
-      ]
-    }
-  ];
-
   constructor(
-    @Inject(LOCALE_ID) public activeLocale: string,
-    private themeService: ThemeService
+    @Inject(LOCALE_ID) public activeLocale: string
   ) { }
 
-  changeTheme(theme: string) {
-    this.themeService.switchTheme(theme);
-  }
-
+  //  @TODO
   changeLocale(locale: string) {
     // When the visitor selects Portuguese, we redirect to `/pt`
     window.location.href = `/${this.activeLocale}`;
   }
 
   sendScrollTo(route: string) {
-    console.log(route)
     this.outputFromChild.emit(route);
+  }
+
+  openUrl(url: string) {
+    window.open(url, '_blank')
   }
 }

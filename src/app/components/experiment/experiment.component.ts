@@ -3,8 +3,7 @@ import works from '../../../assets/experiments.json';
 
 @Component({
   selector: 'app-experiment',
-  templateUrl: './experiment.component.html',
-  styleUrls: ['./experiment.component.css']
+  templateUrl: './experiment.component.html'
 })
 export class ExperimentComponent {
   workData = works.data;

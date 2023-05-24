@@ -7,9 +7,5 @@ import works from '../../../assets/work.json';
   styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent {
-  ibmInternSkills = ['JavaScript', 'JQuery'];
-  ibmDevSkills = ['TypeScript', 'Angular', 'Vue.js'];
-  eisDevSkills = ['React'];
-  
   workData = works.data;
 }

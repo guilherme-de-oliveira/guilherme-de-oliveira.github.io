@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { SkillsDescription } from 'src/app/interfaces/menu-titles';
 
 @Component({
   selector: 'app-card',
@@ -6,12 +7,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent {
-  // ibmInternSkills = 
-  // ibmDevSkills = ['TypeScript', 'Angular', 'Vue.js'];
-  // eisDevSkills = ['React'];
-
   @Input() title: string = '';
-  @Input() skills: Array<String> = [];
+  @Input() skills: Array<SkillsDescription> = [];
   @Input() workDescription: string = '';
   @Input() workItems: Array<String> = [];
 }

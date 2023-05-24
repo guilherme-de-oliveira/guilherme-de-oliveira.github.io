@@ -1,6 +1,5 @@
 
 <app-tab-menu (outputFromChild)="scrollToItem($event)"></app-tab-menu>
-<div class="main">
     <div class="content">
         <!-- <router-outlet></router-outlet> -->
         <app-description id="description"></app-description>
@@ -9,8 +8,6 @@
         <p-divider type="dashed"></p-divider>
         <app-experiment id="experiment"></app-experiment>
     </div>
-    <div  class="footer">
-        <p-divider type="dashed"></p-divider>
-        <app-footer id="contact"></app-footer>
-    </div>
-</div>
+<footer>
+    <app-footer id="contact"></app-footer>
+</footer>

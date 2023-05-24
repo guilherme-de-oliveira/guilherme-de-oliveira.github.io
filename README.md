@@ -29,7 +29,8 @@ Run `ng generate component component-name` to generate a new component. You can 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Publish on Github Pages
-Run `ngh --dir=dist/guilherme-de-oliveira.github.io` to deploy app.
+
+Run `npx ngh --dir=dist/guilherme-de-oliveira.github.io` to deploy app.
 
 ## Running unit tests
 

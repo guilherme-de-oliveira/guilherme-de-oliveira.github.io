@@ -7,7 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class ExperimentCardComponent {
   @Input() title: string = '';
-  @Input() skills: Array<String> = [];
   @Input() workDescription: string = '';
   @Input() code?: string  = '';
   @Input() image?: string  = '';

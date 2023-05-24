@@ -3,3 +3,8 @@ export interface MenuTitles {
     experience: String,
     contact: String
 }
+
+export interface SkillsDescription {
+    name: String,
+    icon: String
+}
