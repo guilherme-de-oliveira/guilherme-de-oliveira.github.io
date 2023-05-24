@@ -20,7 +20,7 @@
             "title": "Software Developer - IBM",
             "skills": [
                 "TypeScript",
-                "Angular",
+                {"name": "Angular", "icon": "fa-brands fa-angular"},
                 "Node.js",
                 "Shell",
                 "Linux",
