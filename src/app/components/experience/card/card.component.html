@@ -1,14 +1,15 @@
 <div class="cardItem">
-    <h2>{{title}}</h2>
+    <h2 style="margin-top: '1em'">{{title}}</h2>
     <p>
-        <p-tag [style]="{'margin-top': '0.5em'}" *ngFor="let skill of skills" class="skill">#{{skill}}</p-tag>
+        <p-tag [style]="{'margin-top': '0.5em', 'height': '35px', 'background-color': '#084A42'}" *ngFor="let skill of skills" class="skill">
+            <div class="flex align-items-center">
+                <img src="../../../assets/images/{{skill.icon}}.png" style="width: 25px; height: 23px;"/>
+                <span>&nbsp;{{skill.name}}</span>
+            </div>
+        </p-tag>
     </p>
-    <i>
-        {{workDescription}}
-    </i>
+    <i>{{workDescription}}</i>
     <ul *ngFor="let item of workItems">
-        <li>
-            {{item}}
-        </li>
+        <li>{{item}}</li>
     </ul>
 </div>

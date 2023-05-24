@@ -1,12 +1,9 @@
-@use '../../../assets/variable.scss' as v;
-
 a {
     color: inherit;
 }
 a:link {
     text-decoration: none;
 }
-
-h3 {
-    color: v.$subject-font-color;
+a:hover {
+    text-decoration: underline;
 }

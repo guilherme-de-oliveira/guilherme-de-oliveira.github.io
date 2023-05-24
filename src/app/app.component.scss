@@ -1,3 +1,5 @@
+$font-family: "Montserrat", sans-serif;
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -10,20 +12,20 @@
     box-sizing: border-box;
 }
 
-.main {
+.content {
     margin: 2% 15% 1% 15%;
-    font-family: "Montserrat", sans-serif;
+    font-family: $font-family;
     font-weight: 300;
     line-height: 1.5;
     color: #333;
-}
-
-.content {
     min-height: 22em;
     margin-top: 5em;
     margin-bottom: 3em;
 }
 
-.footer {
-    margin-bottom: 5em;
+footer {
+    font-family: $font-family;
+    background-color: #fcd45d;
+    text-align: center;
+    padding: 30px 0 30px;
 }
