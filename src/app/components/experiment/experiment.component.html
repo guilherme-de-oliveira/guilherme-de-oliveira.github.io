@@ -1,2 +1,8 @@
-<h3>Thing's I've made or learned by myself.</h3>
-<p>Coming soon :)</p>
+<h2>Projects</h2>
+<app-experiment-card *ngFor="let item of workData"
+    [title]="item.title"
+    [skills]="item.skills"
+    [workDescription]="item.workDescription"
+    [code]="item.code"
+    [image]="item.image"
+></app-experiment-card>

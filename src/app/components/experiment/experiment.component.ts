@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import works from '../../../assets/experiments.json';
 
 @Component({
   selector: 'app-experiment',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./experiment.component.css']
 })
 export class ExperimentComponent {
-
+  workData = works.data;
 }

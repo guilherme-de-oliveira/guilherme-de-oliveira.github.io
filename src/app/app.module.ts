@@ -28,7 +28,9 @@ import { PasswordModule } from 'primeng/password';
 import { ProfileComponent } from './components/profile/profile.component';
 
 import { authInterceptorProviders } from './helpers/auth.interceptor';
-import { BoardAdminComponent } from './components/board-admin/board-admin.component'
+import { BoardAdminComponent } from './components/board-admin/board-admin.component';
+import { ExperimentCardComponent } from './components/experiment/card/card.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +43,8 @@ import { BoardAdminComponent } from './components/board-admin/board-admin.compon
     CardComponent,
     LoginComponent,
     ProfileComponent,
-    BoardAdminComponent
+    BoardAdminComponent,
+    ExperimentCardComponent
   ],
   imports: [
     RouterModule.forRoot([]),

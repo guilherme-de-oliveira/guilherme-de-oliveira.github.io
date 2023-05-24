@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 //   name: string;
 // }
 export class DescriptionComponent {
-  frontEnd: Array<String> = ['JavaScript', 'TypeScript', 'JQuery', 'Angular', 'Vue.js', 'Rxjs', 'HTML', 'CSS/SCSS/SASS', 'Jest'];
-  backEnd: Array<String> = ['Node.js', 'PHP', 'CodeIgneter', 'Java', 'DB2', 'CLoudant', 'SQL'];
-  system: Array<String> = ['Linux', 'AIX', 'Shell Script', 'Docker', 'TravisCI', 'Cloud'];
+  frontEnd: Array<String> = ['JavaScript', 'TypeScript', 'Angular', 'Vue.js', 'Rxjs', 'JQuery'];
+  backEnd: Array<String> = ['Node.js', 'PHP (CodeIgneter)', 'DB2', 'Cloudant/CouchDB', 'SQL'];
+  system: Array<String> = ['Linux', 'Shell Script', 'Docker', 'TravisCI', 'Cloud'];
 }

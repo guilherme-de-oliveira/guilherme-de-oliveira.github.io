@@ -9,8 +9,8 @@ import { BoardAdminComponent } from './components/board-admin/board-admin.compon
 import { ProfileComponent } from './components/profile/profile.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'about', pathMatch: 'full' },
-  { path: 'about', component: DescriptionComponent },
+  { path: '', redirectTo: 'main', pathMatch: 'full' },
+  { path: 'main', component: DescriptionComponent },
   { path: 'work', component: ExperienceComponent },
   { path: 'experiment', component: ExperimentComponent },
   { path: 'login', component: LoginComponent },

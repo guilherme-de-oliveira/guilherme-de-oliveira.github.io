@@ -1,5 +1,5 @@
-import { Inject, Component, LOCALE_ID } from '@angular/core';
-import { MenuItem, SelectItemGroup } from 'primeng/api';
+import { Inject, Component, LOCALE_ID, Output, EventEmitter } from '@angular/core';
+import { MenuItem } from 'primeng/api';
 import { ThemeService } from 'src/app/theme.service';
 
 @Component({
@@ -9,18 +9,19 @@ import { ThemeService } from 'src/app/theme.service';
 })
 
 export class TabMenuComponent {
+  @Output() outputFromChild : EventEmitter<string> = new EventEmitter();
   // Menu Items
   about: string = `About`;
   work: string = `Work`;
   experiment: string = `Experiment`;
   configPlaceHolder: string = `Config`;
+  contact: string = `Contact`;
   items: MenuItem[] = [
-    { label: `${this.about}`, icon: 'pi pi-fw pi-home', routerLink: '/about' },
-    { label: `${this.work}`, icon: 'pi pi-fw pi-file', routerLink: '/work' },
-    { label: `${this.experiment}`, icon: 'pi pi-fw pi-pencil', routerLink: '/experiment' },
+    { label: `${this.about}`, icon: 'pi pi-fw pi-home', command: () => { this.sendScrollTo("description")}},
+    { label: `${this.work}`, icon: 'pi pi-fw pi-file', command: () => { this.sendScrollTo("experience")} },
+    { label: `${this.experiment}`, icon: 'pi pi-fw pi-pencil', command: () => { this.sendScrollTo("experiment")} },
+    { label: `${this.contact}`, icon: 'pi pi-fw pi-users', command: () => { this.sendScrollTo("contact")} },
   ];
-
-  value: string = "md-dark-indigo";
 
   config: MenuItem[] = [
     {
@@ -61,4 +62,8 @@ export class TabMenuComponent {
     window.location.href = `/${this.activeLocale}`;
   }
 
+  sendScrollTo(route: string) {
+    console.log(route)
+    this.outputFromChild.emit(route);
+  }
 }

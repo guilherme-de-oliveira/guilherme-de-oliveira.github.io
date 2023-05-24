@@ -1,17 +1,14 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-card',
+  selector: 'app-experiment-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss']
 })
-export class CardComponent {
-  // ibmInternSkills = 
-  // ibmDevSkills = ['TypeScript', 'Angular', 'Vue.js'];
-  // eisDevSkills = ['React'];
-
+export class ExperimentCardComponent {
   @Input() title: string = '';
   @Input() skills: Array<String> = [];
   @Input() workDescription: string = '';
-  @Input() workItems: Array<String> = [];
+  @Input() code?: string  = '';
+  @Input() image?: string  = '';
 }
