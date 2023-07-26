@@ -14,6 +14,7 @@ export class DescriptionComponent {
     {name: "Angular", icon: "angular"},
     {name: "Vue.js", icon: "vue"},
     {name: "RxJS", icon: "rxjs"},
+    {name: "NgRx", icon: "ngrx"},
     {name: "JQuery", icon: "jquery"},
   ];
   backEnd: Array<SkillsDescription> = [
