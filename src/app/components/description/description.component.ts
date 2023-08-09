@@ -12,9 +12,10 @@ export class DescriptionComponent {
     {name: "JavaScript", icon: "javascript"},
     {name: "TypeScript", icon: "typescript"},
     {name: "Angular", icon: "angular"},
+    {name: "React", icon: "react"},
     {name: "Vue.js", icon: "vue"},
     {name: "RxJS", icon: "rxjs"},
-    {name: "NgRx", icon: "ngrx"},
+    {name: "NgRx (Redux)", icon: "ngrx"},
     {name: "JQuery", icon: "jquery"},
   ];
   backEnd: Array<SkillsDescription> = [
