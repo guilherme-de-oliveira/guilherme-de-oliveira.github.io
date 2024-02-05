@@ -1,6 +1,24 @@
 {
     "data": [
         {
+            "title": "Angular Front-end Developer - RDC Viagens",
+            "skills": [
+                {"name": "TypeScript", "icon": "typescript"},
+                {"name": "Angular", "icon": "angular"},
+                {"name": "NgXS", "icon": "ngrx"},
+                {"name": "RxJS", "icon": "rxjs"},
+                {"name": "Docker", "icon": "docker"},
+                {"name": "Jest", "icon": "jest"}
+            ],
+            "workDescription": "Angular Front-end Developer responsible for designing, developing, and maintaining web applications that deliver an exceptional user experience. Expertise in Angular, TypeScript, HTML, and SCSS that are crucial in creating responsive, efficient, and visually appealing web solutions.",
+            "workItems": [
+                "Develop user interfaces for web applications using Angular, ensuring high performance and responsiveness;",
+                "Collaborate with UI/UX designers to implement user interfaces that match the design specifications;",
+                "Utilized project management tools such as Jira, Slack and Mural to optimize team performance and reach objectives;",
+                "Identify and address performance bottlenecks and implement solutions to enhance application performance. Stay up-to-date with the latest Angular and web development trends, tools, and technologies."
+            ]
+        },
+        {
             "title": "Front-end Developer - EIS",
             "skills": [
                 {"name": "TypeScript", "icon": "typescript"},
