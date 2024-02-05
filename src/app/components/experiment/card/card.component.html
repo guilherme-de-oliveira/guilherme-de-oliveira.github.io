@@ -1,14 +1,16 @@
 <div class="card">
     <p-card header="{{title}}">
         <div class="grid">
-            <div class="col-5">
+            <div class="col-12 md:col-12 sm:col-12 lg:col-5">
                 <img alt="Card" src="{{image}}" height="225px" width="400px" />
             </div>
-            <div class="col-7">
-                <p>{{workDescription}}</p>
-                <a href="{{code}}" target="_blank">
-                    <p-button [style]="{'background-color': '#0E8174'}" label="Github" icon="pi pi-github"></p-button>
-                </a>
+            <div class="col-12 md:col-12 sm:col-12 lg:col-7">
+                <span>{{workDescription}}</span>
+                <p>
+                    <a href="{{code}}" target="_blank">
+                        <p-button [style]="{'background-color': '#0E8174'}" label="Github" icon="pi pi-github"></p-button>
+                    </a>
+                </p>
             </div>
         </div>
     </p-card>
