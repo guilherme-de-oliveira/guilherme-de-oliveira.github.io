@@ -17,6 +17,8 @@ export class DescriptionComponent {
     {name: "RxJS", icon: "rxjs"},
     {name: "NgRx (Redux)", icon: "ngrx"},
     {name: "JQuery", icon: "jquery"},
+    {name: "Tailwind", icon: "tailwind"},
+    {name: "Ant Design", icon: "ant"},
   ];
   backEnd: Array<SkillsDescription> = [
     {name: "Node.js", icon: "nodejs"},

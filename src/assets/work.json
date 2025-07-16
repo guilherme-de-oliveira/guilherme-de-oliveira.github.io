@@ -24,7 +24,8 @@
             "skills": [
                 {"name": "TypeScript", "icon": "typescript"},
                 {"name": "React", "icon": "react"},
-                {"name": "Next.JS", "icon": "nextjs"}
+                {"name": "Next.JS", "icon": "nextjs"},
+                {"name": "Tailwind", "icon": "tailwind"}
             ],
             "workDescription": "AI Trainers for Coding to help fine-tune AI models by reviewing and improving AI-generated code.",
             "workItems": [
@@ -41,7 +42,8 @@
                 {"name": "React", "icon": "react"},
                 {"name": "RxJS", "icon": "rxjs"},
                 {"name": "Docker", "icon": "docker"},
-                {"name": "Jest", "icon": "jest"}
+                {"name": "Jest", "icon": "jest"},
+                {"name": "Ant Design", "icon": "ant"}
             ],
             "workDescription": "Build new reusable compents using React and Ant Design for React, testing using Jest.",
             "workItems": [
