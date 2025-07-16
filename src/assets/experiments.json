@@ -1,6 +1,51 @@
 {
     "data": [
         {
+            "title": "Audiobook platform - Ai Code Generate Review",
+            "skills": [
+                {"name": "React", "icon": "fa-brands fa-react"},
+                "TypeScript",
+                "React",
+                "Material UI",
+                "JSON",
+                "HTML",
+                "CSS"
+            ],
+            "workDescription": "A modern and intuitive audiobook platform designed to offer an immersive listening experience. Users can browse available titles, listen to previews, and easily control playback. The responsive layout ensures smooth usability across both mobile and desktop devices. Perfect for those who prefer the convenience of audiobooks.",
+            "code": "https://github.com/guilherme-de-oliveira/webdev-arena-template/tree/audiobook",
+            "image": "../../../../assets/images/audiobook.png"
+        },
+        {
+            "title": "Analytics Dashboard platform - Ai Code Generate Review",
+            "skills": [
+                {"name": "React", "icon": "fa-brands fa-react"},
+                "TypeScript",
+                "React",
+                "Material UI",
+                "JSON",
+                "HTML",
+                "CSS"
+            ],
+            "workDescription": "A sleek and responsive portfolio template built for web developers to showcase projects and skills professionally. It features a clean layout, smooth animations, and dedicated sections for about, work, and contact. Designed with performance and aesthetics in mind, the template adapts well to all screen sizes, offering an engaging experience for visitors.",
+            "code": "https://github.com/guilherme-de-oliveira/webdev-arena-template/tree/analytics-dashboard",
+            "image": "../../../../assets/images/analytics.png"
+        },
+        {
+            "title": "News platform - Ai Code Generate Review",
+            "skills": [
+                {"name": "React", "icon": "fa-brands fa-react"},
+                "TypeScript",
+                "React",
+                "Material UI",
+                "JSON",
+                "HTML",
+                "CSS"
+            ],
+            "workDescription": "A dynamic and responsive news app that displays real-time articles across various categories. Built with a modern UI, it offers users a smooth browsing experience with intuitive navigation and clear content structure. The application showcases skills in API integration, state management, and responsive design—ideal for demonstrating front-end development capabilities.",
+            "code": "https://github.com/guilherme-de-oliveira/webdev-arena-template/tree/app-news",
+            "image": "../../../../assets/images/news.png"
+        },
+        {
             "title": "Shop System",
             "skills": [
                 {"name": "Angular", "icon": "fa-brands fa-angular"},

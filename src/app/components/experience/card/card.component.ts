@@ -11,4 +11,5 @@ export class CardComponent {
   @Input() skills: Array<SkillsDescription> = [];
   @Input() workDescription: string = '';
   @Input() workItems: Array<String> = [];
+  @Input() duration: string = '';
 }
