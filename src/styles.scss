@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Responsividade global
+@media (max-width: 600px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1025px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+// Imagem responsiva utilitária
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

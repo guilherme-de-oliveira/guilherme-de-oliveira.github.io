@@ -1,6 +1,7 @@
 $background-color: #84b4b1;
 $font-family: 'Lato', sans-serif;
 $font-color: #fff;
+$font-color-mobile: #111;
 
 a {
     color: $font-color;
@@ -68,7 +69,7 @@ header p {
     }
 
     .p-button.p-button-text {
-        color: #fff !important;
+        color: $font-color !important;
     }
     .p-menubar .p-menubar-root-list .p-menuitem .p-menuitem-link {
         .p-menuitem-text {
@@ -90,5 +91,20 @@ header p {
         position: -webkit-sticky; // Needed for Safari browsers.
         z-index: 10000; 
         top: 0;
+    }
+
+    // MENU HAMBURGUER (mobile)
+    @media (max-width: 600px) {
+      .p-menubar .p-menubar-root-list .p-menuitem .p-menuitem-link {
+        .p-menuitem-text {
+          color: $font-color-mobile !important;
+        }
+        .p-menuitem-icon {
+          color: $font-color-mobile !important;
+        }
+      }
+      .p-button.p-button-text {
+        color: $font-color-mobile !important;
+      }
     }
 }

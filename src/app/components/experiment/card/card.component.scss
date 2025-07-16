@@ -1,3 +1,17 @@
 .card {
     margin-bottom: 3em;
 }
+
+.card img.img-fluid {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .card img.img-fluid {
+    max-width: 100%;
+  }
+}
