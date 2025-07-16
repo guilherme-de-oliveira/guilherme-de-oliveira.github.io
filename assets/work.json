@@ -1,7 +1,7 @@
 {
     "data": [
         {
-            "title": "Angular Front-end Developer - RDC Viagens",
+            "title": "Angular Front-end Engineer - RDC Viagens",
             "skills": [
                 {"name": "TypeScript", "icon": "typescript"},
                 {"name": "Angular", "icon": "angular"},
@@ -16,7 +16,24 @@
                 "Collaborate with UI/UX designers to implement user interfaces that match the design specifications;",
                 "Utilized project management tools such as Jira, Slack and Mural to optimize team performance and reach objectives;",
                 "Identify and address performance bottlenecks and implement solutions to enhance application performance. Stay up-to-date with the latest Angular and web development trends, tools, and technologies."
-            ]
+            ],
+            "duration": "2 years"
+        },
+        {
+            "title": "Front-end AI Trainer for Coding - Revelo",
+            "skills": [
+                {"name": "TypeScript", "icon": "typescript"},
+                {"name": "React", "icon": "react"},
+                {"name": "Next.JS", "icon": "nextjs"},
+                {"name": "Tailwind", "icon": "tailwind"}
+            ],
+            "workDescription": "AI Trainers for Coding to help fine-tune AI models by reviewing and improving AI-generated code.",
+            "workItems": [
+                "Tackling coding challenges and reviewing AI-generated code, ensuring it meets the high standards of real-world developers",
+                "Give insights that will help refine AI models, making them more effective at solving programming tasks",
+                "Develop user interfaces for web applications using React, ensuring responsiveness and highly matched with prototype;"
+            ],
+            "duration": "2 months"
         },
         {
             "title": "Front-end Developer - EIS",
@@ -25,14 +42,16 @@
                 {"name": "React", "icon": "react"},
                 {"name": "RxJS", "icon": "rxjs"},
                 {"name": "Docker", "icon": "docker"},
-                {"name": "Jest", "icon": "jest"}
+                {"name": "Jest", "icon": "jest"},
+                {"name": "Ant Design", "icon": "ant"}
             ],
             "workDescription": "Build new reusable compents using React and Ant Design for React, testing using Jest.",
             "workItems": [
                 "Developed modern web applications using React and TypeScript, resulting in enhanced user experience;",
                 "Built new components and integrated them with API services to improve software functionality;",
                 "Utilized project management tools such as Jira, Slack and Mural to optimize team performance and reach objectives;"
-            ]
+            ],
+            "duration": "3 months"
         },
         {
             "title": "Software Developer - IBM",
@@ -58,7 +77,8 @@
                 "Created and maintained Unix Shell scripts for Data Warehouse batch applications;",
                 "Developed a full-featured monitoring WEB application to generate insights and metrics, resulting in 20% cost-savings;",
                 "Collaborated with a multi-disciplinary team to convert business needs into technical specifications."
-            ]
+            ],
+            "duration": "3 years"
         },
         {
             "title": "Application Developer Intern- IBM",
@@ -79,7 +99,8 @@
                 "Developed automation feature to generate QR Code tags, increasing employee productivity by 15% daily;",
                 "Engineered multiple web applications using JavaScript (JQuery), PHP and DB2;",
                 "Collaborated with stakeholders to identify opportunities for process automation, providing analysis and process documentation."
-            ]
+            ],
+            "duration": "1.6 years"
         }
     ]
 }
