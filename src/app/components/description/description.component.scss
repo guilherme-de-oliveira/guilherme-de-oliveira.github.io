@@ -3,3 +3,66 @@ ul {
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margins */
 }
+
+.description-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2em 1em;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1em;
+  word-break: break-word;
+  line-height: 1.1;
+}
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1em;
+  word-break: break-word;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-top: 2em;
+}
+.grid > div {
+  flex: 1 1 250px;
+  min-width: 220px;
+}
+h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5em;
+}
+
+@media (max-width: 600px) {
+  .description-container {
+    padding: 0.5em 0.1em;
+  }
+  h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.7em;
+    line-height: 1.2;
+    word-break: break-word;
+    text-align: left;
+    padding: 0 2px;
+  }
+  p {
+    font-size: 0.95rem;
+    margin-bottom: 0.7em;
+    line-height: 1.4;
+    word-break: break-word;
+    padding: 0 2px;
+  }
+  .grid {
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+  }
+  .grid > div {
+    min-width: 0;
+  }
+}

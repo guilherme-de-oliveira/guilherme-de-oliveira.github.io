@@ -29,10 +29,19 @@ a {
 }
 
 header {
-    background-color: $background-color;
-    color: #fff;
-    text-align: center;
-    padding: 30px 0 120px;
+  background-color: $background-color;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0 120px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+@media (max-width: 600px) {
+  header {
+    padding: 18px 0 40px 0;
+  }
 }
 
 header h1 {
@@ -55,6 +64,30 @@ header h1 span {
 
 header p {
     padding-top: 30px;
+}
+
+header h1.responsive-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 65px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: 0.8;
+  padding-top: 50px;
+  font-family: $font-family;
+}
+
+@media (max-width: 450px) {
+  header h1.responsive-header {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.1;
+    padding-top: 20px;
+  }
+  header h1.responsive-header span {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
 }
 
 // Primeng
@@ -107,4 +140,69 @@ header p {
         color: $font-color-mobile !important;
       }
     }
+
+    // Forçar LinkedIn sempre branco (PrimeIcons e FontAwesome)
+    .p-menubar .p-menuitem .p-menuitem-link .pi-linkedin,
+    .p-menubar .p-menuitem .p-menuitem-link .fa-linkedin,
+    .p-menubar .p-menuitem .p-menuitem-link .fa-linkedin-in,
+    .p-menubar .p-menuitem .p-menuitem-link [class*="linkedin"] {
+      color: #fff !important;
+      fill: #fff !important;
+      stroke: #fff !important;
+    }
+    .p-button .pi-linkedin,
+    .p-button .fa-linkedin,
+    .p-button .fa-linkedin-in,
+    .p-button [class*="linkedin"] {
+      color: #fff !important;
+      fill: #fff !important;
+      stroke: #fff !important;
+    }
+    @media (max-width: 600px) {
+      .p-menubar .p-menuitem .p-menuitem-link .pi-linkedin,
+      .p-menubar .p-menuitem .p-menuitem-link .fa-linkedin,
+      .p-menubar .p-menuitem .p-menuitem-link .fa-linkedin-in,
+      .p-menubar .p-menuitem .p-menuitem-link [class*="linkedin"],
+      .p-button .pi-linkedin,
+      .p-button .fa-linkedin,
+      .p-button .fa-linkedin-in,
+      .p-button [class*="linkedin"] {
+        color: #fff !important;
+        fill: #fff !important;
+        stroke: #fff !important;
+      }
+    }
+    // Forçar GitHub sempre branco (PrimeIcons e FontAwesome)
+    .p-menubar .p-menuitem .p-menuitem-link .pi-github,
+    .p-menubar .p-menuitem .p-menuitem-link .fa-github,
+    .p-menubar .p-menuitem .p-menuitem-link [class*="github"] {
+      color: #fff !important;
+      fill: #fff !important;
+      stroke: #fff !important;
+    }
+    .p-button .pi-github,
+    .p-button .fa-github,
+    .p-button [class*="github"] {
+      color: #fff !important;
+      fill: #fff !important;
+      stroke: #fff !important;
+    }
+    @media (max-width: 600px) {
+      .p-menubar .p-menuitem .p-menuitem-link .pi-github,
+      .p-menubar .p-menuitem .p-menuitem-link .fa-github,
+      .p-menubar .p-menuitem .p-menuitem-link [class*="github"],
+      .p-button .pi-github,
+      .p-button .fa-github,
+      .p-button [class*="github"] {
+        color: #fff !important;
+        fill: #fff !important;
+        stroke: #fff !important;
+      }
+    }
+}
+
+@media (max-width: 600px) {
+  :host ::ng-deep .p-menubar .p-menuitem .p-menuitem-link .p-menuitem-text {
+    color: #111 !important;
+  }
 }
