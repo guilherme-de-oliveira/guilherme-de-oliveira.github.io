@@ -4,6 +4,12 @@ ul {
     margin: 0; /* Remove margins */
 }
 
+@media (max-width: 600px) {
+  .grid {
+    margin-left: unset
+  }
+}
+
 .description-container {
   max-width: 900px;
   margin: 0 auto;

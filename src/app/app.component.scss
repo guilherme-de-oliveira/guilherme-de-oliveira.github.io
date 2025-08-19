@@ -21,6 +21,10 @@ $font-family: "Montserrat", sans-serif;
     min-height: 22em;
     margin-top: 5em;
     margin-bottom: 3em;
+
+    @media (max-width: 600px) {
+        margin: 5em 8% 3em;
+    }
 }
 
 footer {
