@@ -1,0 +1,53 @@
+$font-family: "Montserrat", sans-serif;
+
+.legal-page {
+  margin: 2% 15% 3em;
+  font-family: $font-family;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #333;
+  margin-top: 3em;
+
+  @media (max-width: 600px) {
+    margin: 2em 8% 3em;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 0.25em;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-top: 1.75em;
+    margin-bottom: 0.5em;
+  }
+
+  p,
+  li {
+    margin-bottom: 0.75em;
+  }
+
+  ul {
+    padding-left: 1.25em;
+  }
+
+  .legal-back {
+    display: inline-block;
+    margin-bottom: 1.5em;
+    color: #333;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .legal-updated {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1.5em;
+  }
+}

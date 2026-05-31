@@ -30,6 +30,8 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { authInterceptorProviders } from './helpers/auth.interceptor';
 import { BoardAdminComponent } from './components/board-admin/board-admin.component';
 import { ExperimentCardComponent } from './components/experiment/card/card.component';
+import { TermsOfServiceComponent } from './components/terms-of-service/terms-of-service.component';
+import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { ExperimentCardComponent } from './components/experiment/card/card.compo
     LoginComponent,
     ProfileComponent,
     BoardAdminComponent,
-    ExperimentCardComponent
+    ExperimentCardComponent,
+    TermsOfServiceComponent,
+    PrivacyPolicyComponent
   ],
   imports: [
     RouterModule.forRoot([]),

@@ -7,6 +7,8 @@ import { LoginComponent } from './components/login/login.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { BoardAdminComponent } from './components/board-admin/board-admin.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { TermsOfServiceComponent } from './components/terms-of-service/terms-of-service.component';
+import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'main', pathMatch: 'full' },
@@ -16,6 +18,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'admin', component: BoardAdminComponent },
+  { path: 'terms-of-service', component: TermsOfServiceComponent },
+  { path: 'privacy-policy', component: PrivacyPolicyComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 

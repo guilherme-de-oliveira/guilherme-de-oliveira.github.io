@@ -1,13 +1,15 @@
+<router-outlet *ngIf="isLegalRoute"></router-outlet>
 
-<app-tab-menu (outputFromChild)="scrollToItem($event)"></app-tab-menu>
-    <div class="content">
-        <!-- <router-outlet></router-outlet> -->
-        <app-description id="description"></app-description>
-        <p-divider type="dashed"></p-divider>
-        <app-experience id="experience"></app-experience>
-        <p-divider type="dashed"></p-divider>
-        <app-experiment id="experiment"></app-experiment>
-    </div>
-<footer>
+<ng-container *ngIf="!isLegalRoute">
+  <app-tab-menu (outputFromChild)="scrollToItem($event)"></app-tab-menu>
+  <div class="content">
+    <app-description id="description"></app-description>
+    <p-divider type="dashed"></p-divider>
+    <app-experience id="experience"></app-experience>
+    <p-divider type="dashed"></p-divider>
+    <app-experiment id="experiment"></app-experiment>
+  </div>
+  <footer>
     <app-footer id="contact"></app-footer>
-</footer>
+  </footer>
+</ng-container>
